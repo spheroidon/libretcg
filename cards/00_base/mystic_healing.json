@@ -1,0 +1,14 @@
+{
+    "author": "Spheroidon",
+    "name": "Mystic Healing",
+    "health": 60,
+    "power": 120,
+    "action": "Restore 20 health to one \nof your cards.",
+    "lore": "",
+    "image": "mystic_healing.png",
+    "font": "lovely-butterfly-regular.ttf",
+    "text_color": [240, 255, 240],
+    "text_outline": 4,
+    "text_outline_color": [40, 15, 40],
+    "text_outline_blur": 3
+}

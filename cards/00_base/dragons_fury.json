@@ -1,0 +1,14 @@
+{
+    "author": "Spheroidon",
+    "name": "Dragon's Fury",
+    "health": 80,
+    "power": 320,
+    "action": "Deal 50 damage to \nall enemy cards.",
+    "lore": "",
+    "image": "dragons_fury.png",
+    "font": "vinque-regular.ttf",
+    "text_color": [245, 242, 238],
+    "text_outline": 4,
+    "text_outline_color": [73, 14, 8],
+    "text_outline_blur": 2
+}

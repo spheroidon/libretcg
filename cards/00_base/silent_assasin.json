@@ -1,0 +1,14 @@
+{
+    "author": "Spheroidon",
+    "name": "Silent Assassin",
+    "health": 50,
+    "power": 150,
+    "action": "Select an enemy card to\nattack. If it has 50 or less\nremaining HP, deal 50\ndamage. If it has more than\n50 HP, deal 20 damage to\nit instead.",
+    "lore": "",
+    "image": "silent_assassin.png",
+    "font": "robotoslab-semibold.ttf",
+    "text_color": [255, 255, 255],
+    "text_outline": 3,
+    "text_outline_color": [0, 0, 0],
+    "text_outline_blur": 5
+}

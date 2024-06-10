@@ -1,0 +1,14 @@
+{
+    "author": "Spheroidon",
+    "name": "Stone Guardian",
+    "health": 80,
+    "power": 250,
+    "action": "Reduce damage taken by\nthis card by 30 for the next\nturn.",
+    "lore": "",
+    "image": "stone_guardian.png",
+    "font": "robotoslab-bold.ttf",
+    "text_color": [210, 210, 210],
+    "text_outline": 3,
+    "text_outline_color": [0, 0, 0],
+    "text_outline_blur": 2
+}

@@ -1,0 +1,14 @@
+{
+    "author": "Spheroidon",
+    "name": "Elemental Burst",
+    "health": 50,
+    "power": 200,
+    "action": "Deal 40 damage to\ntwo enemy cards.",
+    "lore": "",
+    "image": "elemental_burst.png",
+    "font": "robotoslab-medium.ttf",
+    "text_color": [255, 255, 255],
+    "text_outline": 4,
+    "text_outline_color": [0, 0, 0],
+    "text_outline_blur": 4
+}

@@ -1,0 +1,14 @@
+{
+    "author": "Spheroidon",
+    "name": "Glass Sword",
+    "health": 20,
+    "power": 110,
+    "action": "Deal 40 damage to an\nenemy card of your choice.",
+    "lore": "",
+    "image": "glass_sword.png",
+    "font": "robotoslab-semibold.ttf",
+    "text_color": [244, 246, 246],
+    "text_outline": 4,
+    "text_outline_color": [34, 36, 42],
+    "text_outline_blur": 5
+}

@@ -1,0 +1,14 @@
+{
+    "author": "Spheroidon",
+    "name": "Knight's Shield",
+    "health": 40,
+    "power": 90,
+    "action": "Reduce damage taken by \nyour cards by 10 for \nthe next turn.",
+    "lore": "",
+    "image": "knights_shield.png",
+    "font": "robotoslab-semibold.ttf",
+    "text_color": [249, 249, 249],
+    "text_outline": 3,
+    "text_outline_color": [0, 0, 0],
+    "text_outline_blur": 2
+}

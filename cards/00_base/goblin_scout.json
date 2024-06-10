@@ -1,0 +1,14 @@
+{
+    "author": "Spheroidon",
+    "name": "Goblin Scout",
+    "health": 40,
+    "power": 40,
+    "action": "Deal 10 damage to an\nenemy card of your choice.",
+    "lore": "",
+    "image": "goblin_scout.png",
+    "font": "robotoslab-semibold.ttf",
+    "text_color": [252, 252, 252],
+    "text_outline": 4,
+    "text_outline_color": [16, 13, 2],
+    "text_outline_blur": 0
+}
