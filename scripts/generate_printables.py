@@ -4,6 +4,7 @@ A script to generate card images based on user input.
 
 import json
 import os
+import sys
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 CARD_WIDTH, CARD_HEIGHT = 900, 1350
@@ -13,11 +14,11 @@ class CardGenerator:
     A class to generate card images.
     """
 
-    def __init__(self, assets_dir='./assets'):
+    def __init__(self, assets_dir='./assets', expansion='', card_data_list=[]):
         self.assets_dir = assets_dir
-        self.card_data_dir = './cards/'
-        self.printables_dir = './printables/cards/'
-        self.card_data_list = []
+        self.card_data_dir = './cards/'+expansion
+        self.printables_dir = './printables/cards/'+expansion
+        self.card_data_list = card_data_list
 
     def save_card_image(self, card_image, card_name):
         """
@@ -163,10 +164,23 @@ class CardGenerator:
         self.card_data_list = []
 
         # Get the expansion and card names from the user
-        card_data_dir_input = input("Expansion name: ")
+        try:
+            card_data_dir_input = sys.argv[1]
+        except IndexError:
+            card_data_dir_input = input("Expansion name: ")
+        except KeyboardInterrupt:
+            print("Exiting...")
+            return
+        try:
+            card_names_input = sys.argv[2]
+        except IndexError:
+            card_names_input = input("Cards to generate (comma-separated, leave empty for all): ")
+        except KeyboardInterrupt:
+            print("Exiting...")
+            return
+        
         self.card_data_dir += card_data_dir_input
         self.printables_dir += card_data_dir_input
-        card_names_input = input("Cards to generate (comma-separated, leave empty for all): ")
         card_names = card_names_input.split(',')
 
         # Create a list of filenames by processing each card name from the user input
