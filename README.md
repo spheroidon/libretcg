@@ -1,6 +1,6 @@
 # LibreTCG
 
-**LibreTCG** is an open-source, print & play trading card game where players can create their own cards using JSON files. This project aims to provide a flexible and customizable gaming experience for enthusiasts and developers alike.
+**LibreTCG** is an open-source, print & play trading card game where players can create their own cards!
 
 ## Table of Contents
 
@@ -13,7 +13,7 @@
 
 ## About the Game
 
-LibreTCG allows players to design and print their own trading cards, bringing their unique ideas to life. The game mechanics are defined in JSON files, making it easy to customize and expand.
+LibreTCG allows players to design and print their own trading cards, bringing their unique ideas to life. The card mechanics are defined in JSON files, making it easy to customize.
 
 ## Getting Started
 
