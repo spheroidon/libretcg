@@ -9,6 +9,9 @@
 *.xcf
 *.xcf.gz
 
+# Example PSD
+!assets/example.psd
+
 # Python-related
 # Byte-compiled / optimized / DLL files
 __pycache__/
