@@ -1,7 +1,7 @@
 {
     "author": "Spheroidon",
     "name": "Stone Guardian",
-    "health": 80,
+    "health": 90,
     "power": 250,
     "action": "Reduce damage taken by\nthis card by 30 for the next\nturn.",
     "lore": "",

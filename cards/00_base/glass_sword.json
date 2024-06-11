@@ -1,7 +1,7 @@
 {
     "author": "Spheroidon",
     "name": "Glass Sword",
-    "health": 20,
+    "health": 10,
     "power": 110,
     "action": "Deal 40 damage to an\nenemy card of your choice.",
     "lore": "",

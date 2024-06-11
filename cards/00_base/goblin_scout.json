@@ -1,7 +1,7 @@
 {
     "author": "Spheroidon",
     "name": "Goblin Scout",
-    "health": 40,
+    "health": 30,
     "power": 40,
     "action": "Deal 10 damage to an\nenemy card of your choice.",
     "lore": "",
