@@ -21,6 +21,7 @@ Thank you for considering contributing to the LibreTCG project! This guide will 
    - **Card Template**:
       ```json
       {
+         "version": 1,
          "author": "LibreTCG",
          "name": "Example",
          "health": 60,
@@ -37,8 +38,9 @@ Thank you for considering contributing to the LibreTCG project! This guide will 
       ```
 
    - **Requirements**:
+     - **version**: The current revision of the card. Start at 1, increase by 1 each time the name, action, health or power change.
      - **author**: The contributor's name/username. If credit is unwanted, set to "LibreTCG".
-     - **name**: The name of the card.
+     - **name**: The name of the card. Must be the same as the filename, but can include spaces, special characters and have uppercase letters.
      - **health**: The health points of the card.
      - **power**: The power level of the card.
      - **action**: The action or ability of the card.

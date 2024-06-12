@@ -32,7 +32,7 @@ class CardGenerator:
         card_image.save(output_path)
         print(f"Card '{card_name}' generated at {output_path}")
 
-    def generate_card_image(self, card):
+    def generate_card_image(self, card, expansion):
         """
         Generate a card image based on the provided card data.
         """
@@ -96,15 +96,22 @@ class CardGenerator:
         draw_text_with_outline(draw, (x, 40), text, small_font)
 
         # Card author
-        text = f"Card by {card['author']}"
+        text = f"Card by {card['author']} / V{card['version']}"
         width = 0
         for c in text:
             width += small_font.getbbox(c)[2]
-        x = (CARD_WIDTH - width) / 2 # Center the author line horizontally
-        draw_text_with_outline(draw, (x, 1250), text, small_font)
+        x = (CARD_WIDTH - width) / 2 # Center the line horizontally
+        draw_text_with_outline(draw, (x, 1200), text, small_font)
+
+        text = f"Expansion: {expansion}"
+        width = 0
+        for c in text:
+            width += small_font.getbbox(c)[2]
+        x = (CARD_WIDTH - width) / 2 # Center the line horizontally
+        draw_text_with_outline(draw, (x, 1270), text, small_font)
 
         # Card HP & Power
-        text = f"HP: {card['health']} | PWR: {card['power']}"
+        text = f"HP: {card['health']} / PWR: {card['power']}"
         draw_text_with_outline(draw, (30, 110), text, font)
 
         # Action description
@@ -192,6 +199,7 @@ class CardGenerator:
         # Check if the expansion name is valid
         if not os.path.exists(self.card_data_dir) or self.card_data_dir == './cards/':
             print(f"Error: '{card_data_dir_input}' is not valid. Defaulting to '00_base'.")
+            card_data_dir_input = '00_base'
             self.card_data_dir = './cards/00_base'
             self.printables_dir = './printables/cards/00_base'
 
@@ -206,7 +214,7 @@ class CardGenerator:
         # Load and generate card images
         cards = self.load_cards()
         for card in cards:
-            self.generate_card_image(card)
+            self.generate_card_image(card, card_data_dir_input.replace('/', '').replace('.', '').strip())
 
 def main():
     """
