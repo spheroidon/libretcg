@@ -103,6 +103,9 @@ class CardGenerator:
         x = (CARD_WIDTH - width) / 2 # Center the line horizontally
         draw_text_with_outline(draw, (x, 1200), text, small_font)
 
+        expansion = expansion.replace('_',' ').split(' ')[1:] # Remove the expansion number
+        expansion = ' '.join(expansion).replace('/', '').replace('.', '').strip()
+        expansion = expansion.title()
         text = f"Expansion: {expansion}"
         width = 0
         for c in text:
@@ -214,7 +217,7 @@ class CardGenerator:
         # Load and generate card images
         cards = self.load_cards()
         for card in cards:
-            self.generate_card_image(card, card_data_dir_input.replace('/', '').replace('.', '').strip())
+            self.generate_card_image(card, card_data_dir_input)
 
 def main():
     """
