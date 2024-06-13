@@ -45,7 +45,7 @@ Thank you for considering contributing to the LibreTCG project! This guide will 
      - **power**: The power level of the card.
      - **action**: The action or ability of the card.
      - **lore**: Lore or flavor text describing the card.
-     - **image**: Image filename of the card (must be included in the repository under `./assets/images/`). 900 by 1350 pixels, border shouldn't be larger than 25 pixels.
+     - **image**: Image filename of the card (must be included in the repository under `./assets/images/`). 900 by 1350 pixels, border shouldn't be larger than 25 pixels. PSD template available at `./assets/example.psd`.
      - **font**: Font file used for text.
      - **text_color**: RGB color values for text.
      - **text_outline**: Radius of the text's outline. Set to 0 to disable.
