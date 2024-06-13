@@ -1,6 +1,7 @@
 # LibreTCG-related
 # Printables
 /printables/
+*.pdf
 
 # Graphic files
 *.psd

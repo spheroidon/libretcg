@@ -195,7 +195,6 @@ class CardGenerator:
         card_names = card_names_input.split(',')
 
         # Create a list of filenames by processing each card name from the user input
-        self.card_data_list = []
         for card in card_names:
             formatted_card = card.strip().lower().replace(' ', '_').replace('.json', '')
             self.card_data_list.append(f"{formatted_card}.json")
