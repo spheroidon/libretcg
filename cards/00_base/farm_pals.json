@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "author": "EmilyMumely",
+    "name": "Farm Pals",
+    "health": 70,
+    "power": 190,
+    "action": "Deal 40 damage to an\nenemy card of your choice.",
+    "lore": "",
+    "image": "farm_pals.png",
+    "font": "robotoslab-semibold.ttf",
+    "text_color": [255, 252, 252],
+    "text_outline": 3,
+    "text_outline_color": [1, 1, 1],
+    "text_outline_blur": 1
+}
