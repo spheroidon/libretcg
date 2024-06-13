@@ -3,7 +3,7 @@
     "author": "Spheroidon",
     "name": "Dragon's Fury",
     "health": 80,
-    "power": 300,
+    "power": 310,
     "action": "Deal 30 damage to \nall enemy cards.",
     "lore": "",
     "image": "dragons_fury.png",
