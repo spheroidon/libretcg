@@ -38,19 +38,19 @@ Thank you for considering contributing to the LibreTCG project! This guide will 
       ```
 
    - **Requirements**:
-     - **version**: The current revision of the card. Start at 1, increase by 1 each time the name, action, health or power change.
-     - **author**: The contributor's name/username. If credit is unwanted, set to "LibreTCG".
-     - **name**: The name of the card. Must be the same as the filename, but can include spaces, special characters and have uppercase letters.
-     - **health**: The health points of the card.
-     - **power**: The power level of the card.
-     - **action**: The action or ability of the card.
-     - **lore**: Lore or flavor text describing the card.
-     - **image**: Image filename of the card (must be included in the repository under `./assets/images/`). 900 by 1350 pixels, border shouldn't be larger than 25 pixels. PSD template available at `./assets/example.psd`.
-     - **font**: Font file used for text.
-     - **text_color**: RGB color values for text.
-     - **text_outline**: Radius of the text's outline. Set to 0 to disable.
-     - **text_outline_color**: RGB color values for the text's outline.
-     - **text_outline_blur**: Radius for blurring the text's outline. Set to 0 to disable.
+     - **name** (required): The name of the card. Must be the same as the filename, but can include spaces, special characters and have uppercase letters.
+     - **health** (required): The health points of the card.
+     - **power** (required): The power level of the card.
+     - **action** (required): The action or ability of the card.
+     - **image** (required): Image filename of the card (must be included in the repository under `./assets/images/`). 900 by 1350 pixels, border shouldn't be larger than 25 pixels. PSD template available at `./assets/example.psd`.
+     - **lore** (optional, default: empty): Short flavor text describing the card. Usually left empty.
+     - **version** (optional, default: 1): The current revision of the card. Start at 1, increase by 1 each time the name, action, health or power change.
+     - **author** (optional, default: LibreTCG): The contributor's name/username. If credit is unwanted, set to "LibreTCG".
+     - **font** (optional, default: roboto-semibold.ttf): Font file used for text.
+     - **text_color** (optional, default: [255, 255, 255]): RGB color values for text.
+     - **text_outline** (optional, default: 3): Radius of the text's outline. Set to 0 to disable.
+     - **text_outline_color** (optional, default: [0, 0, 0]): RGB color values for the text's outline.
+     - **text_outline_blur** (optional, default: 0): Radius for blurring the text's outline. Set to 0 to disable.
 
    - **Modify Cards**:
      - You may modify existing cards for balancing or grammatical errors only.
@@ -98,7 +98,7 @@ Thank you for considering contributing to the LibreTCG project! This guide will 
    - **Description**: Explain the reasoning behind the suggestion, any impact on gameplay, and how it would enhance the overall experience.
 
 3. **Suggestions for New Cards**
-   - For suggestions of new cards to be added to the game, submit them as a GitHub issue under the `New Card Suggestion` label.
+   - For suggestions of new cards to be added to the game, submit them as a GitHub issue under the `New Card` label.
    - **Title**: The name of the new card.
    - **Description**: Provide details on the card's health, action, power, and how it integrates into the game’s current balance.
    - **Image**: If you have a proposed image for the card, attach it as a file in the issue. If possible, include the design file (PSD) and any additional resources to support the visual design.
