@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "author": "Spheroidon",
+    "name": "Rainbow Vomit Dog",
+    "health": 70,
+    "power": 200,
+    "action": "Deal 30 damage to an\nenemy card, and restore\n10 health to this card.",
+    "lore": "",
+    "image": "rainbow_vomit_dog.png",
+    "font": "roboto-bold.ttf",
+    "text_color": [255, 254, 253],
+    "text_outline": 3,
+    "text_outline_color": [0, 0, 0],
+    "text_outline_blur": 2
+}
