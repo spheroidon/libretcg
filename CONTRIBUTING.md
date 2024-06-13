@@ -83,6 +83,32 @@ Thank you for considering contributing to the LibreTCG project! This guide will 
 8. **Respect Project Rules**
    - Do not modify core rules, contribution guide, readme, or any of the scripts, except for grammatical errors or bug fixes.
 
+#### Using GitHub Issues
+
+1. **Bug Reports**
+   - If you encounter issues with the scripts, use the GitHub issue tracker to submit a detailed bug report.
+   - **Title**: Clearly describe the issue in the title.
+   - **Description**: Provide a comprehensive description of the bug, including steps to reproduce, screenshots, and error messages, if possible.
+   - **Environment Information**: Specify the platform on which the bug occurs (e.g., operating system).
+   - **Expected Behavior**: Describe the expected outcome versus the observed issue.
+
+2. **Suggestions for Core Rule Changes**
+   - If you have suggestions for changing the core rules of the game, submit them as a GitHub issue.
+   - **Title**: Clearly indicate the nature of the suggestion.
+   - **Description**: Explain the reasoning behind the suggestion, any impact on gameplay, and how it would enhance the overall experience.
+
+3. **Suggestions for New Cards**
+   - For suggestions of new cards to be added to the game, submit them as a GitHub issue under the `New Card Suggestion` label.
+   - **Title**: The name of the new card.
+   - **Description**: Provide details on the card's health, action, power, and how it integrates into the game’s current balance.
+   - **Image**: If you have a proposed image for the card, attach it as a file in the issue. If possible, include the design file (PSD) and any additional resources to support the visual design.
+
+4. **Questions**
+   - If you have questions about gameplay mechanics, contributing guidelines, or any aspect of the project, submit them as a GitHub issue under the `Questions` label.
+   - **Title**: A brief summary of your question or inquiry.
+   - **Description**: Clearly outline your question or issue, including any relevant details or context that would help provide clarity or context for the discussion.
+   - **Screenshots/Examples**: If necessary, attach screenshots, photos or examples to help clarify your question or concern.
+
 #### Code of Conduct
 
 - Follow the project's [code of conduct](./CODE_OF_CONDUCT.md) at all times.
