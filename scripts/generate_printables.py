@@ -37,7 +37,7 @@ class CardGenerator:
         Generate a card image based on the provided card data.
         """
         # Load fonts
-        font_path = os.path.join(self.assets_dir, 'fonts', card['font'])
+        font_path = os.path.join(self.assets_dir, 'fonts', card.get('font', 'roboto-semibold.ttf'))
         font = ImageFont.truetype(font_path, 64)
         small_font = ImageFont.truetype(font_path, 40)
         # Create a blank card image
@@ -57,22 +57,23 @@ class CardGenerator:
             """
             Draw text with an outline on the card image.
             """
-            outline_color = tuple(card['text_outline_color'])
-            text_color = tuple(card['text_color'])
-            if card['text_outline'] > 0:
+            outline_color = tuple(card.get('text_outline_color', [0, 0, 0]))
+            text_color = tuple(card.get('text_color', [255, 255, 255]))
+            text_outline = card.get('text_outline', 3)
+            if text_outline > 0:
                 # Draw outline first
                 outline_image = Image.new('RGBA', card_image.size, (0, 0, 0, 0))
                 outline_draw = ImageDraw.Draw(outline_image)
 
-                for x in range(-card['text_outline'], card['text_outline'] + 1):
-                    for y in range(-card['text_outline'], card['text_outline'] + 1):
+                for x in range(-text_outline, text_outline + 1):
+                    for y in range(-text_outline, card['text_outline'] + 1):
                         if x == 0 and y == 0:
                             continue
                         pos = (position[0] + x, position[1] + y)
                         outline_draw.text(pos, text, font=font, fill=outline_color)
                 # Apply blur if needed
-                if card['text_outline_blur'] > 0:
-                    radius = card['text_outline_blur']
+                if card.get('text_outline_blur', 0) > 0:
+                    radius = card.get('text_outline_blur', 0)
                     outline_image = outline_image.filter(ImageFilter.GaussianBlur(radius=radius))
                 # Paste the blurred outline image over the original image
                 card_image.paste(outline_image, (0, 0), outline_image)
@@ -88,7 +89,7 @@ class CardGenerator:
         draw_text_with_outline(draw, (30, 30), text, font)
 
         # Lore
-        text = card['lore']
+        text = card.get('lore', '')
         width = 0
         for c in text:
             width += small_font.getbbox(c)[2]
@@ -96,7 +97,7 @@ class CardGenerator:
         draw_text_with_outline(draw, (x, 40), text, small_font)
 
         # Card author
-        text = f"Card by {card['author']} / V{card['version']}"
+        text = f"Card by {card.get('author', 'LibreTCG')} / V{card.get('version', '1')}"
         width = 0
         for c in text:
             width += small_font.getbbox(c)[2]
@@ -114,11 +115,11 @@ class CardGenerator:
         draw_text_with_outline(draw, (x, 1260), text, small_font)
 
         # Card HP & Power
-        text = f"HP: {card['health']} / PWR: {card['power']}"
+        text = f"HP: {card.get('health', 'N/A')} / PWR: {card.get('power', 'N/A')}"
         draw_text_with_outline(draw, (30, 110), text, font)
 
         # Action description
-        text = card['action']
+        text = card.get('action', 'N/A')
         lines = text.split('\n')
 
         # Calculate the height of each line
