@@ -3,11 +3,11 @@
 #### **Setup**
 
 1. **Deck Building**:
-   - Each player constructs a deck of exactly 10 cards.
+   - Each player constructs a deck of exactly 7 cards.
    - The total power of the cards in the deck must not exceed 1000.
    
 2. **Starting the Game**:
-   - Each player draws their 10-card deck.
+   - Each player draws their 7-card deck.
    - Decide who goes first by tossing a coin.
 
 3. **Play Area**:
