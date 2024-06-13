@@ -39,9 +39,9 @@ Thank you for considering contributing to the LibreTCG project! This guide will 
 
    - **Requirements**:
      - **name** (required): The name of the card. Must be the same as the filename, but can include spaces, special characters and have uppercase letters.
-     - **health** (required): The health points of the card.
-     - **power** (required): The power level of the card.
-     - **action** (required): The action or ability of the card.
+     - **health** (required): The health points of the card. Must be a multiple of 10.
+     - **power** (required): The power level of the card. Must be a multiple of 10.
+     - **action** (required): The action or ability of the card. Any action that modifies HP (such as attacks or healing) must use a multiple of 10.
      - **image** (required): Image filename of the card (must be included in the repository under `./assets/images/`). 900 by 1350 pixels, border shouldn't be larger than 25 pixels. PSD template available at `./assets/example.psd`.
      - **lore** (optional, default: empty): Short flavor text describing the card. Usually left empty.
      - **version** (optional, default: 1): The current revision of the card. Start at 1, increase by 1 each time the name, action, health or power change.
