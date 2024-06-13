@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "author": "Spheroidon",
+    "name": "Human Warrior",
+    "health": 70,
+    "power": 120,
+    "action": "Deal 30 damage to an\nenemy card of your choice.",
+    "lore": "",
+    "image": "human_warrior.png",
+    "font": "roboto-medium.ttf",
+    "text_color": [241, 235, 221],
+    "text_outline": 4,
+    "text_outline_color": [2, 2, 2],
+    "text_outline_blur": 2
+}
