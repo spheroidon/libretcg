@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "author": "Spheroidon",
+    "name": "Fire Warrior",
+    "health": 50,
+    "power": 120,
+    "action": "Deal 40 damage to an\nenemy card of your choice.",
+    "lore": "",
+    "image": "fire_warrior.png",
+    "font": "robotoslab-medium.ttf",
+    "text_color": [255, 245, 100],
+    "text_outline": 4,
+    "text_outline_color": [15, 8, 6],
+    "text_outline_blur": 1
+}
