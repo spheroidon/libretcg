@@ -27,7 +27,8 @@
    - You must play a card if your playfield has fewer than 3 cards.
 
 3. **Card Actions**:
-   - After playing a card, you may execute the action of any one card on your playfield.
+   - After playing a card, you must execute the action of the card you just played.
+   - If your playfield is full (contains 3 cards), you may choose the action of any one card on your playfield instead.
    - The action is resolved immediately, and any effects are applied.
 
 4. **HP (Health Points)**:
