@@ -111,7 +111,7 @@ class CardGenerator:
         for c in text:
             width += small_font.getbbox(c)[2]
         x = (CARD_WIDTH - width) / 2 # Center the line horizontally
-        draw_text_with_outline(draw, (x, 1270), text, small_font)
+        draw_text_with_outline(draw, (x, 1260), text, small_font)
 
         # Card HP & Power
         text = f"HP: {card['health']} / PWR: {card['power']}"
