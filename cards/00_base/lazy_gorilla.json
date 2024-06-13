@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "author": "EmilyMumely",
+    "name": "Lazy Gorilla",
+    "health": 100,
+    "power": 230,
+    "action": "Deal 10 damage to an\nenemy card of your choice.\nYou cannot use this action\nagain on your next turn.",
+    "lore": "",
+    "image": "lazy_gorilla.png",
+    "font": "roboto-bold.ttf",
+    "text_color": [253, 252, 255],
+    "text_outline": 4,
+    "text_outline_color": [3, 3, 5],
+    "text_outline_blur": 2
+}
