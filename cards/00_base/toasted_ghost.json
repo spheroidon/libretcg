@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "author": "Spheroidon",
+    "name": "Toasted Ghost",
+    "health": 40,
+    "power": 70,
+    "action": "Deal 20 damage to an\nenemy card of your choice.",
+    "lore": "BOO!",
+    "image": "toasted_ghost.png",
+    "font": "robotoslab-medium.ttf",
+    "text_color": [255, 255, 255],
+    "text_outline": 3,
+    "text_outline_color": [2, 2, 2],
+    "text_outline_blur": 0
+}
