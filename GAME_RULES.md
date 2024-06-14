@@ -4,7 +4,7 @@
 
 1. **Deck Building**:
    - Each player constructs a deck of exactly 7 cards.
-   - The total power of the cards in the deck must not exceed 1000.
+   - The total power of the cards in the deck must not exceed 850.
    
 2. **Starting the Game**:
    - Each player draws their 7-card deck.
@@ -28,7 +28,7 @@
 
 3. **Card Actions**:
    - After playing a card, you must execute the action of the card you just played.
-   - If your playfield is full (contains 3 cards), you may choose the action of any one card on your playfield instead.
+   - If your playfield is full (contains 3 cards) or you don't have any cards in your hand, you may choose the action of any one card on your playfield instead.
    - The action is resolved immediately, and any effects are applied.
 
 4. **HP (Health Points)**:
